@@ -1,0 +1,19 @@
+\newcommand{\abbrlabel}[1]{\makebox[3cm][l]{\textbf{#1}\ \dotfill}}
+\newenvironment{abbreviations}{\begin{list}{}{\renewcommand{\makelabel}{\abbrlabel}}}{\end{list}}
+
+\chapter*{Thuật ngữ \& từ viết tắt}
+\thispagestyle{empty}
+\pagestyle{empty}
+\addcontentsline{toc}{chapter}{Thuật ngữ \& từ viết tắt}
+\vspace{1.0cm}
+\begin{abbreviations}
+	\item[ABI] Contract Application Binary Interface: là chuẩn do Smart contract cung cấp để các ứng dụng giao tiếp với nó.
+    \item[API] Application Programming Interface: giao diện lập trình ứng dụng, là giao diện mà một đối tượng(máy tính hoặc ứng dụng) cung cấp để các đối tượng khác có thể tương tác với nó. 
+    \item[ĐApp] Ứng dụng phi tập trung.
+    \item[EVM] Ethereum Virtual Machine: máy ảo Ethereum.
+    \item[IoT] Mạng lưới vạn vật kết nối Internet
+	\item[Node] Node là một phần tử trong mạng
+	\item[PoA] Luật đồng thuận Proof of Authority.
+	\item[PoS] Luật đồng thuận Proof of Stake.
+	\item[PoW] Luật đồng thuận Proof of Work.
+\end{abbreviations}

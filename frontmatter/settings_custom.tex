@@ -1,0 +1,55 @@
+
+% the following lines are for creating a simplified TO-DO box. However since boites is not per default installed with all latex-distributions, we have removed this example again
+% if you want to use it and do not have "boites" installed, you can get it from here: http://www.ctan.org/tex-archive/macros/latex/contrib/boites
+%
+%\usepackage{boites,boites_exemples}
+%\newcommand{\todolist}[1]{\begin{boiteepaisseavecuntitre}{TO DO in this chapter} #1 \end{boiteepaisseavecuntitre}}  % creates a little box
+% %\newcommand{\todolist}[1]{}  % to be used when to do is not to be printed
+\usepackage[numbers]{natbib}
+\bibliographystyle{IEEEtranN}
+\usepackage[noabbrev, nameinlink]{cleveref}
+\usepackage{pdfpages}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage{pifont}
+\usepackage{tabto}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{pdflscape}
+%\usepackage{subcaption}
+\usepackage{subfig}
+\usepackage{forest}
+
+%%%%%%%%%%% kien setting %%%%%%%%%%%%%%%%%
+\usepackage{tabu}
+\usepackage{wrapfig}
+\usepackage{indentfirst}
+\usepackage{float}
+%paragraph indentation
+\setlength{\parindent}{3em} 
+
+%paragraph spacing
+\setlength{\parskip}{.5em}
+
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{algpseudocode}
+%\algrenewcommand{\algorithmiccomment}[1]{\hfill // #1}
+\SetKwProg{Proc}{Procedure}{}{}
+\SetKwProg{Func}{Function}{}{}
+%\renewcommand{\algorithmcfname}{Smart Contract}
+\SetArgSty{textnormal}
+
+
+\sloppy
+\captionsetup[figure]{labelfont={small,bf},textfont={small,it},belowskip=-1pt,aboveskip=7pt}
+%space remove between caption, figure, and text
+\captionsetup[table]{labelfont={small,bf},textfont={small,it},belowskip=-1pt,aboveskip=7pt}
+%space remove between caption, table, and text
+%%%%%%%%%%%% end kien setting %%%%%%%%%%%%
+
+\makeatletter
+\renewcommand*\l@figure{\@dottedtocline{1}{1em}{3.2em}}
+\makeatother
